@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            color: aliceblue;
+        }
+        body{
+            background-color: blanchedalmond;
+            display: grid;
+            grid-template-areas: 
+            'h'
+            'm'
+            'f'
+            ;
+        }
+        header{
+            background-color: darksalmon;
+            grid-area: h;
+            padding: 5px;
+            border: 5px solid brown;
+            margin: 5px;
+        }
+        main{
+            background-color: cadetblue;
+            grid-area: m;
+            border: 5px solid wh;
+        }
+        article{
+            display: grid;
+            grid-template-areas: 
+            's1 a1'
+            's2 a2'
+            's3 .'
+            ;
+            border: 5px solid white;
+            margin: 5px;
+        }
+
+        #section1{
+            grid-area: s1;
+            border: 2px solid white;
+            margin: 5px;
+            padding: 5px;
+        }
+        #section2{
+            grid-area: s2;
+            border: 2px solid white;
+            margin: 5px;
+            padding: 5px;
+        }
+        #section3{
+            grid-area: s3;
+            border: 2px solid white;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        #aside1{
+            grid-area: a1;
+            border: 2px solid white;
+            margin: 5px;
+            padding: 5px;
+        }
+        #aside2{
+            grid-area: a2;
+            border: 2px solid white;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        footer{
+            background-color: darkslategrey;
+            grid-area: f;
+            border: 5px solid rosybrown;
+            margin: 5px;
+            display: grid;
+            font-size: 20px;
+            font-weight: bold;
+            grid-template-areas: 
+            'f1 f2'
+            ;
+        }
+
+        
+        #footer1{
+            grid-area: f1;
+            border: 2px solid rosybrown;
+            margin: 5px;
+        }
+        #footer2{
+            grid-area: f2;
+            border: 2px solid rosybrown;
+            margin: 5px;
+        }
+
+        @media screen and (max-width: 600px){
+            footer{
+                grid-template-areas: 
+                'f1'
+                'f2'
+                ; 
+            }
+
+            article{
+               grid-template-areas: 
+               's1'
+               's2'
+               's3'
+               'a1'
+               'a2'
+               ; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header Nav</h1>
+    </header>
+    <main>
+        <article>
+            <section id="section1">Section1</section>
+            <section id="section2">Scetion2</section>
+            <section id="section3">Section3</section>
+
+            <aside id="aside1">Aside1</aside>
+            <aside id="aside2">Aside2</aside>
+
+        </article>
+    </main>
+    <footer>
+        <nav id="footer1">Footer1</nav>
+        <nav id="footer2">Footer2</nav>
+    </footer>
+</body>
+</html>

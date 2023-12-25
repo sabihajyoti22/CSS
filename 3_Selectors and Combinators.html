@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset = "UTF-8"> <!--For supporting different character -->
+		<meta http-equiv = "X-UA-Compatible" content = "IE=edge"><!--Internet explorer can support older version -->
+		<meta name="viewport" content = "width=device-width,initial-scale=1.0"/><!--To support every device -->
+		
+		<meta name="description" content = "Free html tutorial"/><!--To optimize the search engine -->
+		<meta name="keywords" content = "html, HTML"/><!--To make the search engine easier to search-->
+		<meta name="author" content = "Sabiha Nasrin Jyoti"/>
+		
+		<title>Selector and Combinator</title>
+		
+		<style> 
+			
+			h2,p{
+				background-color:red;
+				color:white;
+			}/* grouping selector */
+			
+			.style1{
+				color:purple;
+			}
+			.style2{
+				font-size:150%;
+			}
+			
+			div > p{
+				background-color:yellow;
+				color:blue;
+			}/* child sector selector */
+			
+			div + p{
+				background-color:yellow;
+				color:blue;
+			}/* adjacent selector */
+			
+			*{
+				background-color:green;
+			}/* Unversal Selector */
+			
+			
+		</style>
+		
+		
+		
+	</head>
+
+	<body>
+		<h1 class="style1 style2">This is a heading 1</h1><!--Multiple Selector-->
+		
+		<h2>This is a heading 2</h2>
+		<div>
+			<p>This is a paragraph 1</p>
+			<p>This is a paragraph 2</p>
+			<section> <p>This is a paragraph 3</p> </section>
+		</div>
+		<p>This is a paragraph 4</p>
+	</body>
+</html>
+<!--
+	grouping selector
+	child sector(>)
+	descendant selector(" ")
+	adjacent selector(+)
+	general sibling selector(~)
+-->

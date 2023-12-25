@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claculator</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .header-text>p{
+            font-weight: bold;
+            font-size: 50px;
+            text-shadow: 5px 5px 5px gray;
+        }
+        .header-text{
+            text-align: center;
+        }
+        .container{
+            background-image: linear-gradient(to right,#2193b0,#6dd5ed);
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+            box-sizing: border-box;
+        }
+        .container > div{
+            margin: 20px;
+            width: 400px;
+            box-sizing: border-box;
+            background-color: rgb(245, 239, 239);
+        }
+        input{
+            width: 100%;
+            height: 100px;
+            text-align: right;
+            font-family: Roboto;
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            border: none;
+        }
+        .rows{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            box-sizing: border-box;
+        }
+        .rows > div{
+            width: 25%;
+            height: 80px;
+            margin: 3px;
+            background-color: black;
+            color: white;
+            font-family: Roboto;
+            font-weight: bold;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .rows > .different{
+            background-color: indigo;
+        }
+        .rows > .equal{
+            background-color: orange;
+        }
+        .rows > div:hover{
+            background-color: lightcoral;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header-text">
+        <p>Calculator</p>
+    </div>
+    <div class="container">
+        <div>
+            <input type="text">
+            <div class="rows">
+                <div> <p>C</p></div>
+                <div>+/-</div>
+                <div>%</div>
+                <div class="different">/</div>
+            </div>
+            <div class="rows">
+                <div> <p>7</p></div>
+                <div>8</div>
+                <div>9</div>
+                <div class="different">X</div>
+            </div>
+            <div class="rows">
+                <div> <p>4</p></div>
+                <div>5</div>
+                <div>6</div>
+                <div class="different">-</div>
+            </div>
+            <div class="rows">
+                <div> <p>3</p></div>
+                <div>2</div>
+                <div>1</div>
+                <div class="different">+</div>
+            </div>
+            <div class="rows">
+                <div> <p>0</p></div>
+                <div>.</div>
+                <div>DEL</div>
+                <div class="equal">=</div>
+            </div>
+
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .grid-container > div{
+            background-color: cornflowerblue;
+            border: 2px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            /* grid-template-columns: repeat(3, auto); */
+            /* grid-template-columns: 2fr 1fr 1fr; */
+            grid-template-columns: auto auto auto;
+            /* grid-template-rows: 100px 50px; */
+            grid-gap: 8px 4px;
+        }
+        .div1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .item1{grid-area: header;}
+        .item2{grid-area: menu;}
+        .item3{grid-area: main;}
+        .item4{grid-area: aside;}
+        .item5{grid-area: footer;}
+
+        .grid-container-area{
+            background-color: coral;
+            display: grid;
+            grid-template-areas: 
+                'header header header header header header'
+                'menu main main main aside aside'
+                'menu footer footer footer footer footer'
+            ;
+        }
+        .grid-container-area > div{
+            text-align: center;
+            background-color: cadetblue;
+            border: 2px solid white;
+            padding: 2px;
+        }
+
+        .container{
+            background-color: burlywood;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        }
+        .container > div{
+            border: 2px solid white;
+            padding: 2px;
+            margin: 2px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="div1">1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
+    </div>
+
+    <div class="grid-container-area">
+        <div class="item1"><h1>Header</h1></div>
+        <div class="item2"><h1>Menu</h1></div>
+        <div class="item3"><h1>Main</h1></div>
+        <div class="item4"><h1>Aside</h1></div>
+        <div class="item5"><h1>Footer</h1></div>
+    </div>
+
+    <div class="container">
+        <div><p>Vero nonumy amet est sanctus invidunt ipsum eirmod erat labore amet. Sit eirmod clita rebum lorem. Sea diam stet clita.</p></div>
+        <div><p>Vero nonumy amet est sanctus invidunt ipsum eirmod erat labore amet. Sit eirmod clita rebum lorem. Sea diam stet clita.</p></div>
+        <div><p>Vero nonumy amet est sanctus invidunt ipsum eirmod erat labore amet. Sit eirmod clita rebum lorem. Sea diam stet clita.</p></div>
+        <div><p>Vero nonumy amet est sanctus invidunt ipsum eirmod erat labore amet. Sit eirmod clita rebum lorem. Sea diam stet clita.</p></div>
+        <div><p>Vero nonumy amet est sanctus invidunt ipsum eirmod erat labore amet. Sit eirmod clita rebum lorem. Sea diam stet clita.</p></div>
+        <div><p>Vero nonumy amet est sanctus invidunt ipsum eirmod erat labore amet. Sit eirmod clita rebum lorem. Sea diam stet clita.</p></div>
+        <div><p>Vero nonumy amet est sanctus invidunt ipsum eirmod erat labore amet. Sit eirmod clita rebum lorem. Sea diam stet clita.</p></div>
+        <div><p>Vero nonumy amet est sanctus invidunt ipsum eirmod erat labore amet. Sit eirmod clita rebum lorem. Sea diam stet clita.</p></div>
+    </div>
+
+</body>
+</html>

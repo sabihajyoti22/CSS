@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow and Tooltip</title>
+    <style>
+        .div1{
+            width: 300px;
+            height: 300px;
+            background-color: aqua;
+            overflow: auto;
+        }
+        ::-webkit-scrollbar{
+            /* width: 0; */
+            background-color: aliceblue;
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color: rgb(98, 224, 224);
+            border-radius: 15px;
+        }
+        .tooltip{
+            position: relative;
+
+        }
+        .tooltip .tooltip-text{
+            width: 150px;
+            background-color: blueviolet;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border: 2px solid white;
+            border-radius: 5px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            visibility: hidden;
+        }
+        .tooltip:hover .tooltip-text{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="tooltip">Facebook
+        <span class="tooltip-text">Facebook is a social media</span>
+    </a>
+    <div class="div1">
+        Sed sed rebum at sit sadipscing lorem accusam amet amet sed, sanctus sit kasd justo kasd rebum dolores lorem no..
+        Lorem justo aliquyam et erat ipsum invidunt vero, justo clita et sea ut magna. Erat at clita kasd labore et diam amet. Sed diam diam amet est est no diam voluptua. Eos sanctus lorem labore sed, sadipscing sit stet sadipscing labore stet et no. Sed dolore sadipscing dolor gubergren erat gubergren ea dolor accusam, diam sed eos sed dolores est sit sanctus, amet amet invidunt rebum lorem. Gubergren at eos ipsum voluptua dolore sit no ea, et ipsum gubergren justo lorem eirmod justo nonumy lorem sed. Aliquyam dolore et ipsum at elitr clita, vero et justo labore dolor dolores ea.
+        Duo stet sadipscing ea vero et eirmod vero et, no diam et erat et gubergren ea eirmod et. Magna sadipscing sit et justo, ipsum invidunt elitr diam diam duo. Justo diam justo invidunt diam justo et, est dolore sed consetetur vero sed lorem rebum. Et invidunt labore ea ipsum magna dolor kasd no amet, vero stet dolor ipsum eirmod lorem et at et et, ut dolores ipsum sea nonumy invidunt sed sed, erat duo diam amet dolore accusam, gubergren amet ea ut accusam gubergren, duo et takimata sit justo. Accusam sed ipsum sit kasd labore et diam. Kasd sed clita.
+    </div>
+</body>
+</html>

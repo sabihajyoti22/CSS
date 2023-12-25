@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centering</title>
+    <style>
+        .head{
+            background-color: pink;
+            text-align: center;
+        }
+        h1{
+            width: 200px;
+            margin: 0 auto;
+        }
+        .center{
+            background-color: cadetblue;
+            height: 500px;
+            width: 500px;
+            margin: 0 auto;
+            margin-top: 10px;
+            position: relative;
+        }
+        .content{
+            background-color: crimson;
+            width: 50%;
+            height: 50%;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1>Bangladesh</h1>
+    </div>
+    <div class="center">
+        <div class="content">
+            <h2>Dhaka</h2>
+            <p>Invidunt diam sed dolor clita diam. Clita tempor ea ut no, sea voluptua sit et amet sadipscing kasd gubergren diam,</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: beige;
+        }
+        .nav-bar{
+            background-color: cadetblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .nav-bar a{
+            text-decoration: none; 
+            color: white;
+            font-size: 25px;
+            padding: 15px;
+        }
+        .item{
+            position: relative;
+        }
+        .item:hover .sub-item{
+            display: block;
+        }
+        .sub-item a:hover{
+            background-color: darkseagreen;
+            border: 2px solid white;
+            margin: 2px;
+        }
+        .sub-item{
+            position: absolute;
+            background-color: cadetblue;
+            margin-top: 15px;
+            width: 100%;
+            border: 2px solid white;
+            display: none;
+        }
+        .sub-item > a{
+            font-size: 20px;
+            padding: 5px;
+            display: block;
+            margin: 2px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="#">Home</a>
+        <div class="item">
+            <a href="#">Contact Us</a>
+            <div class="sub-item">
+                <a href="#">Facebook</a>
+                <a href="#">Email</a>
+            </div>
+        </div>
+        <a href="#">About Us</a>
+    </div>
+</body>
+</html>

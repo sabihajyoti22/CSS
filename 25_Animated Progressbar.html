@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Progressbar</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        div{
+            background-color: cadetblue;
+            color: white;
+            margin: 0 auto;
+            width: 400px;
+            height: 550px;
+            padding: 20px;
+        }
+        div ul li{
+            font-size: 25px;
+            margin: 30px 0;
+            position: relative;
+            list-style-type: none;
+        }
+        div ul li::before{
+            position: absolute;
+            content: "";
+            background-color: aquamarine;
+            width: 350px;
+            height: 25px;
+            top: calc(100% + 2px);
+            left: 0;
+            border-radius: 15px;
+            
+        }
+        div li::after{
+            position: absolute;
+            content: "";
+            background-color: rgb(18, 179, 125);
+            width: 350px;
+            height: 25px;
+            top: calc(100% + 2px);
+            left: 0;
+            width: 0;
+            border-radius: 15px;
+            
+        }
+        div li.html::after{
+            animation-name: html;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+            animation-timing-function: linear;
+            animation-iteration-count: 3;
+            
+        }
+
+        div li.css::after{
+            animation-name: css;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+            animation-timing-function: linear;
+            animation-iteration-count: 3;
+            
+        }
+
+        div li.js::after{
+            animation-name: js;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+            animation-timing-function: linear;
+            animation-iteration-count: 3;
+            
+        }
+
+        div li.bootstrap::after{
+            animation-name: bootstrap;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+            animation-timing-function: linear;
+            animation-iteration-count: 3;
+            
+        }
+
+        div li.java::after{
+            animation-name: java;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+            animation-timing-function: linear;
+            animation-iteration-count: 3;
+            
+        }
+
+        div li.c::after{
+            animation-name: c;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+            animation-timing-function: linear;
+            animation-iteration-count: 3;    
+        }
+
+        @keyframes html {
+            from{
+                width: 0;
+            }
+            to{
+                width: 100%;
+            }
+        }
+
+        @keyframes css {
+            from{
+                width: 0;
+            }
+            to{
+                width: 90%;
+            }
+        }
+
+        @keyframes js {
+            from{
+                width: 0;
+            }
+            to{
+                width: 10%;
+            }
+        }
+
+        @keyframes bootstrap {
+            from{
+                width: 0;
+            }
+            to{
+                width: 5%;
+            }
+        }
+
+        @keyframes java {
+            from{
+                width: 0;
+            }
+            to{
+                width: 40%;
+            }
+        }
+
+        @keyframes c {
+            from{
+                width: 0;
+            }
+            to{
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+            <li class="js">JS</li>
+            <li class="bootstrap">BOOTSTRAP</li>
+            <li class="java">JAVA</li>
+            <li class="c">C++</li>
+        </ul>
+    </div>
+</body>
+</html>

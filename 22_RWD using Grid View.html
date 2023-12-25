@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD using Grid View</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: brown;
+            height: 120px;
+            color: orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav{
+            background-color: cadetblue;
+            padding: 5px;
+        }
+        nav a{
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            padding: 5px;
+            display: block;
+        }
+        main{
+            background-color: aqua;
+            padding: 5px;
+        }
+        main *{
+            padding: 5px;
+        }
+        aside{
+            background-color: darkturquoise;
+            text-align: center;
+        }
+        aside *{
+            padding: 5px;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* For desktop: */
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+
+
+        @media screen and (max-width: 800px){
+           /* For tablet: */
+            .col-s-1 {width: 8.33%;}
+            .col-s-2 {width: 16.66%;}
+            .col-s-3 {width: 25%;}
+            .col-s-4 {width: 33.33%;}
+            .col-s-5 {width: 41.66%;}
+            .col-s-6 {width: 50%;}
+            .col-s-7 {width: 58.33%;}
+            .col-s-8 {width: 66.66%;}
+            .col-s-9 {width: 75%;}
+            .col-s-10 {width: 83.33%;}
+            .col-s-11 {width: 91.66%;}
+            .col-s-12 {width: 100%;} 
+        }
+        
+
+        [class*="col-"] {
+            float: left;
+            padding: 10px;
+        }
+        @media screen and (max-width: 768px){
+            [class*="col-"] {
+                width: 100%;
+            }
+            nav a{
+                text-align: center;
+            }
+            nav a:hover{
+                border: 2px solid white;
+                background-color: darkcyan;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <Header class="col-12 col-s-12">
+        <h1>Sabiha Nasrin Jyoti</h1>
+    </Header>
+    <nav class="col-1 col-s-4">
+        <a href="#">Home</a>
+        <a href="#">Contact Us</a>
+        <a href="#">About Us</a>
+    </nav>
+    <main class="col-7 col-s-8">
+        <h2>I am a Web Designer</h2>
+        <p>Sadipscing et gubergren justo sit takimata, kasd et dolor magna dolor voluptua. Erat diam est et sed accusam. Gubergren invidunt.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus quod rerum esse explicabo minima animi odit laboriosam sunt dolorem quisquam tenetur distinctio, quia voluptate! Sunt ut quibusdam illo voluptates in!Ea labore est no dolores lorem aliquyam takimata, no invidunt sit et eirmod at kasd ut lorem amet. Justo lorem justo eos labore amet diam est eos, no ut et eos labore, stet ea et clita nonumy sed dolores, sed no erat rebum dolor aliquyam gubergren gubergren, sed aliquyam dolor duo ipsum sea sit, et clita voluptua accusam magna, amet aliquyam amet lorem vero, labore lorem diam est dolor no gubergren eos amet. Dolor aliquyam voluptua ipsum duo erat aliquyam clita aliquyam no. Est amet stet duo erat dolor. Ipsum invidunt no duo et ipsum eos eos rebum dolore, sed.</p>
+        <p>Amet rebum stet amet sea eos. Dolores justo consetetur ea stet sit. No dolores et no sanctus justo sadipscing sed dolor, sit amet est accusam magna est et clita diam est, elitr et tempor no duo, dolor clita lorem takimata magna sea. Lorem ipsum sea sed amet sed magna justo diam accusam. Sanctus accusam magna dolor amet ipsum voluptua, lorem.Sit kasd kasd ea vero et dolor dolor diam nonumy. Lorem gubergren ipsum sea lorem lorem, diam justo aliquyam sed labore clita et elitr voluptua, diam voluptua gubergren consetetur sadipscing ut no ut. Magna aliquyam lorem invidunt dolores ut dolores et clita. At ipsum sed accusam sed et invidunt, invidunt aliquyam sanctus et tempor elitr labore magna, dolore dolor sea erat elitr et erat elitr. Tempor rebum erat est vero rebum ipsum lorem, accusam sed sit eirmod diam. Magna tempor dolor sit duo diam ipsum, et justo sanctus elitr consetetur dolores diam magna et invidunt, tempor lorem sanctus et lorem est, no lorem voluptua est rebum ut sed, stet lorem et sed diam et labore justo, eirmod sea amet eirmod consetetur sed, sea sit et et no rebum dolor et, accusam diam invidunt no eos dolor justo sit. Dolores diam ea invidunt lorem consetetur, lorem takimata et vero aliquyam gubergren.Amet sadipscing diam sadipscing tempor gubergren no. Dolore takimata et accusam elitr nonumy tempor et et sanctus. Takimata consetetur sed et sanctus lorem rebum consetetur voluptua, clita takimata sit amet justo voluptua tempor rebum. Et gubergren sadipscing dolor sanctus aliquyam accusam vero no. Et dolor elitr lorem consetetur, rebum vero dolores diam takimata. Et et tempor sanctus accusam dolor. Stet dolore no eos magna lorem. Sit erat invidunt no amet consetetur diam et no. Justo amet tempor sit accusam ametEa dolor sed rebum est takimata. No diam sadipscing sed dolor ipsum tempor. Ipsum gubergren lorem vero elitr kasd labore dolore, at sea takimata consetetur et diam. Kasd accusam lorem diam invidunt stet, lorem ipsum dolores lorem sed eos duo, vero et dolor et aliquyam rebum sea et amet ipsum,..</p>
+    </main>
+    <aside class="col-4 col-s-12">
+        <h2>What I love?</h2>
+        <p>Duo et sed labore nonumy et et voluptua. Magna et sea ut clita dolore dolores dolor. Aliquyam magna tempor gubergren dolor eos clita invidunt.</p>
+
+        <h2>What I do?</h2>
+        <p>Duo et sed labore nonumy et et voluptua. Magna et sea ut clita dolore dolores dolor. Aliquyam magna tempor gubergren dolor eos clita invidunt.</p>
+
+        <h2>Where I live?</h2>
+        <p>Duo et sed labore nonumy et et voluptua. Magna et sea ut clita dolore dolores dolor. Aliquyam magna tempor gubergren dolor eos clita invidunt.</p>
+
+        <h2>How do I look?</h2>
+        <p>Duo et sed labore nonumy et et voluptua. Magna et sea ut clita dolore dolores dolor. Aliquyam magna tempor gubergren dolor eos clita invidunt.</p>
+    </aside>
+    <footer class="col-12 col-s-12">
+        &copy; Sabiha Nasrin Jyoti
+    </footer>
+</body>
+</html>

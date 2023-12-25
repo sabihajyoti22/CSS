@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Property</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 800px;
+        }
+        img{
+            width: 200px;
+            height: 300px;
+            border-radius: 50px;
+            margin: 0 auto;
+            border: 5px solid black;
+            animation-name: anim-repeat;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+        img:hover{
+            animation-name: anim;
+            animation-duration: 10s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes anim {
+            from{
+                border-color: orange;
+            }
+            to{
+                border-color: red;
+            }
+        }
+
+        @keyframes anim-repeat {
+            0%{
+                top: 0;
+                left: 0;
+            }
+            50%{
+                top: 100px;
+                left: 0;
+            }
+            100%{
+                top: 0;
+                left: 0;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <div>
+        <img src="Me.jpg" alt="Sabiha Nasrin Jyoti">
+    </div>
+</body>
+</html>

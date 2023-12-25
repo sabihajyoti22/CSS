@@ -1,0 +1,138 @@
+﻿.glass {
+    width: 1300px;
+    height: 680px;
+    background: rgba( 255, 255, 255, 0.55 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-top: 40px;
+    margin-left: 120px;
+}
+
+body {
+    background-image: url(Image/image.jpg)
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#cafe {
+    font-family: "Bebas Neue";
+    font-size: 40px;
+    margin-top: 0px;
+    letter-spacing: 2px;
+}
+
+#darjeeling {
+    font-family: "Halimun";
+    font-size: 30px;
+    margin: 0px;
+    position: absolute;
+    left: 80px;
+    top: 55px;
+}
+
+#great {
+    font-family: "Bebas Neue";
+    font-size: 20px;
+    margin-top: 60px;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+hr{
+    height: 2px;
+    width: 130px;
+    background-color: black;
+    border: none;
+}
+
+.glass {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+#description {
+    font-family: "Roboto";
+    color: #507474;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+#book {
+    width: 300px;
+    height: 50px;
+    background-color: white;
+    margin-top: 80px;
+}
+
+#table {
+    font-family: "Bebas Neue";
+    font-size: 20px;
+    padding-top: 14px;
+    padding-left: 15px;
+    margin: 0px;
+}
+
+#arrow {
+    width: 20px;
+    height: 20px;
+    margin-top: 1px;
+    margin-left: 155px;
+}
+
+#book:hover {
+    width: 600px;
+}
+
+#arrow:hover {
+    margin-left: 355px;
+}
+
+.glass > .row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.rectangle{
+    width: 220px;
+    height: 280px;
+    border-radius: 10px;
+    margin-top: 90px;
+    margin-left: 50px;
+    background-color: white;
+    float: left;
+    opacity: 50%;
+    position: relative;
+}
+.rec{
+    width: 100px;
+    height: 50px;
+    background-color: teal;
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 150px;
+    border-radius: 0px 0px 25px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.font{
+    color: white;
+    font-family: ROBOTO;
+    font-weight: bold;
+    font-size: 20px;
+}
+.font1{
+    color: white;
+    font-family: ROBOTO;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 20px;
+}
